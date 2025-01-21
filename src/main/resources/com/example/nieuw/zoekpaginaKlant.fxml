@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.nieuw.ZoekpaginaController" style="-fx-background-color: #FFFFFF;">
+    <children>
+        <!-- Sidebar -->
+        <VBox style="-fx-background-color: #0C003C;" prefWidth="200.0" AnchorPane.topAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+            <children>
+                <Text fill="#e2871c" layoutX="20.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="SafeNight Solutions" wrappingWidth="190.0" style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-padding: 10px;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Label text="Home" textFill="WHITE" style="-fx-font-size: 16px; -fx-padding: 10px;" />
+            </children>
+        </VBox>
+
+        <!-- Content Section -->
+        <HBox alignment="CENTER" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+            <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #E2871C; -fx-padding: 30px; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: #FFFFFF; -fx-border-width: 2px;">
+                <children>
+                    <!-- Search bar -->
+                    <Label text="Welkom, Klant!" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
+                    <Label text="Paal zoeken..." style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
+                    <HBox spacing="10.0" alignment="CENTER">
+                        <TextField fx:id="searchField" prefWidth="400.0" promptText="Zoek locatie..."
+                                   style="-fx-background-color: #FFFFFF; -fx-padding: 10px;" />
+                        <Button text="🔍" style="-fx-background-color: #FFFFFF; -fx-padding: 5px;"/>
+                    </HBox>
+                </children>
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>
