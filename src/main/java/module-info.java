@@ -13,4 +13,6 @@ module com.example.nieuw {
 
     opens com.example.nieuw to javafx.fxml;
     exports com.example.nieuw;
+    requires java.sql; // Voeg dit toe voor toegang tot java.sql
 }
+

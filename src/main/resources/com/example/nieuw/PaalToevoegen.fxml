@@ -16,7 +16,7 @@
             AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="0.0">
          <children>
             <Label text="SafeNight Solutions" textFill="#e2871c" style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-padding: 10px;" />
-            <Label text="Home" textFill="WHITE" style="-fx-font-size: 16px; -fx-padding: 10px;" onMouseClicked="#switchToHome"/>
+            <Label text="Paal zoeken" textFill="WHITE" style="-fx-font-size: 16px; -fx-padding: 10px;" onMouseClicked="#switchToHome"/>
          </children>
       </VBox>
 
@@ -27,8 +27,8 @@
                <Label text="Paal Toevoegen" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
                <Line startX="0.0" endX="300.0" stroke="#E2871C" strokeWidth="1.5" />
                <TextField fx:id="paalnummerField" promptText="Paalnummer" prefWidth="300.0" style="-fx-background-color: #F5F5F5; -fx-padding: 10px;" />
-               <TextField fx:id="locatieField" promptText="Locatie" prefWidth="300.0" style="-fx-background-color: #F5F5F5; -fx-padding: 10px;" />
-               <TextField fx:id="datumField" promptText="Datum" prefWidth="300.0" style="-fx-background-color: #F5F5F5; -fx-padding: 10px;" />
+               <TextField fx:id="stadsnaamField" promptText="Stadsnaam" prefWidth="300.0" style="-fx-background-color: #F5F5F5; -fx-padding: 10px;" />
+               <TextField fx:id="straatnaamField" promptText="Straatnaam" prefWidth="300.0" style="-fx-background-color: #F5F5F5; -fx-padding: 10px;" />
                <Button text="Opslaan" onAction="#handleOpslaanButtonClick" style="-fx-background-color: #0C003C; -fx-text-fill: WHITE; -fx-font-size: 16px; -fx-padding: 10px;" />
             </children>
          </VBox>

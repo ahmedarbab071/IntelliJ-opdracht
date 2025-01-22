@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.nieuw.PaalDetailsController">
+    <children>
+        <!-- Linkerveld -->
+        <AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #0A0039;">
+            <children>
+                <Text fill="#d58b39" layoutX="18.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Safenight Solutions"
+                      wrappingWidth="160.0">
+                    <font>
+                        <Font name="Arial Black" size="19.0" />
+                    </font>
+                </Text>
+                <Text fill="#fcfafa" layoutX="50.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paal zoeken" onMouseClicked="#switchToZoekpagina" />
+            </children>
+        </AnchorPane>
+
+        <!-- Middenveld met paaldetails -->
+        <AnchorPane layoutX="200.0" layoutY="0.0" prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #D58B39;">
+            <children>
+                <Label fx:id="paalnummerLabel" layoutX="12.0" layoutY="20.0" text="Paalnummer: " />
+                <Label fx:id="accupercentageLabel" layoutX="12.0" layoutY="60.0" text="Accupercentage: " />
+                <Label fx:id="accuverbruikLabel" layoutX="12.0" layoutY="100.0" text="Accuverbruik: " />
+                <Label fx:id="accuopbrengstLabel" layoutX="12.0" layoutY="140.0" text="Accuopbrengst: " />
+                <Label fx:id="gebruiksfrequentieLabel" layoutX="12.0" layoutY="180.0" text="Gebruiksfrequentie: " />
+            </children>
+        </AnchorPane>
+
+        <!-- Rechterveld met gebruiksmomenten -->
+        <AnchorPane layoutX="420.0" layoutY="0.0" prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #D58B39;">
+            <children>
+                <Label fx:id="gebruiksmomentenLabel" layoutX="12.0" layoutY="20.0" text="Gebruiksmomenten:" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
