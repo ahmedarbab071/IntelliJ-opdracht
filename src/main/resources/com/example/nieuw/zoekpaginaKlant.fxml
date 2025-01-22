@@ -14,34 +14,38 @@
         <VBox style="-fx-background-color: #0C003C;" prefWidth="200.0" AnchorPane.topAnchor="0.0"
               AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="0.0">
             <children>
-                <Label text="SafeNight Solutions" textFill="#e2871c"
+                <!-- Consistente tekst voor SafeNight Solutions -->
+                <Label text="SafeNight Solutions" textFill="#E2871C"
                        style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-padding: 10px;" />
-                <Label text="Paal zoeken" textFill="WHITE" style="-fx-font-size: 16px; -fx-padding: 10px;" />
+                <!-- Links in sidebar -->
+                <Label text="Paal zoeken" textFill="WHITE"
+                       style="-fx-font-size: 16px; -fx-padding: 10px; -fx-font-weight: normal;" />
             </children>
         </VBox>
 
-        <!-- Main Content Section -->
-        <HBox alignment="CENTER" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0"
-              AnchorPane.bottomAnchor="0.0">
-            <VBox alignment="CENTER" spacing="20.0"
-                  style="-fx-background-color: #E2871C; -fx-padding: 30px; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: #FFFFFF; -fx-border-width: 2px;">
+        <!-- Oranje achtergrond -->
+        <AnchorPane style="-fx-background-color: #E2871C;" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="200.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+            <!-- Main Content Section -->
+            <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="250.0"
+                  AnchorPane.rightAnchor="250.0" style="-fx-background-color: #FFFFFF; -fx-padding: 30px;
+               -fx-border-radius: 10px; -fx-background-radius: 10px;">
                 <children>
                     <Label text="Paal zoeken" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
 
                     <!-- Straat ListView -->
-                    <Label text="Selecteer een straat" style="-fx-font-size: 16px; -fx-text-fill: #0C003C;" />
+                    <Label text="Selecteer een straat:" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
                     <ListView fx:id="straatListView" onMouseClicked="#handleStraatClick" prefHeight="150.0"
                               prefWidth="300.0"
                               style="-fx-background-color: #FFFFFF; -fx-border-color: #0C003C; -fx-border-width: 2px;" />
 
                     <!-- Paal ListView -->
-                    <Label text="Selecteer een paal" style="-fx-font-size: 16px; -fx-text-fill: #0C003C;" />
+                    <Label text="Selecteer een paal:" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
                     <ListView fx:id="paalListView" onMouseClicked="#handlePaalClick" prefHeight="150.0"
                               prefWidth="300.0"
                               style="-fx-background-color: #FFFFFF; -fx-border-color: #0C003C; -fx-border-width: 2px;" />
-
                 </children>
             </VBox>
-        </HBox>
+        </AnchorPane>
     </children>
 </AnchorPane>

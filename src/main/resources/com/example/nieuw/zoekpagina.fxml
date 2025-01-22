@@ -30,8 +30,9 @@
       <AnchorPane style="-fx-background-color: #E2871C;" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="200.0"
                   AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
          <!-- Main Content Section -->
-         <VBox alignment="CENTER" spacing="20.0" layoutX="50.0" layoutY="50.0" maxWidth="600.0" maxHeight="400.0"
-               style="-fx-background-color: #FFFFFF; -fx-padding: 30px; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="250.0"
+               AnchorPane.rightAnchor="250.0" style="-fx-background-color: #FFFFFF; -fx-padding: 30px;
+               -fx-border-radius: 10px; -fx-background-radius: 10px;">
             <children>
                <Label text="Paal zoeken" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
 
