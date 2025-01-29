@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.nieuw.ZoekpaginaController" style="-fx-background-color: #FFFFFF;">
+            fx:controller="com.example.nieuw.ZoekpaginaKlantController" style="-fx-background-color: #FFFFFF;">
     <children>
         <!-- Sidebar -->
         <VBox style="-fx-background-color: #0C003C;" prefWidth="200.0" AnchorPane.topAnchor="0.0"
               AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="0.0">
             <children>
-                <!-- Consistente tekst voor SafeNight Solutions -->
                 <Label text="SafeNight Solutions" textFill="#E2871C"
                        style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-padding: 10px;" />
-                <!-- Links in sidebar -->
                 <Label text="Paal zoeken" textFill="WHITE"
                        style="-fx-font-size: 16px; -fx-padding: 10px; -fx-font-weight: normal;" />
             </children>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.nieuw.PaalDetailsKlantController">
+    <children>
+        <!-- Sidebar -->
+        <VBox style="-fx-background-color: #0C003C;" prefWidth="200.0" AnchorPane.topAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+            <children>
+                <!-- Consistente tekst voor SafeNight Solutions -->
+                <Label text="SafeNight Solutions" textFill="#E2871C"
+                       style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-padding: 10px;" />
+                <!-- Links in sidebar -->
+                <Label text="Paal zoeken" textFill="WHITE"
+                       style="-fx-font-size: 16px; -fx-padding: 10px; -fx-font-weight: normal;"
+                       onMouseClicked="#switchToZoekpagina" />
+            </children>
+        </VBox>
+
+        <!-- Oranje achtergrond -->
+        <AnchorPane style="-fx-background-color: #E2871C;" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="200.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+            <!-- Content Section -->
+            <VBox alignment="TOP_LEFT" spacing="20.0" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0"
+                  AnchorPane.rightAnchor="20.0" style="-fx-padding: 20px;">
+                <children>
+                    <!-- Paal Details -->
+                    <VBox spacing="10.0" style="-fx-background-color: #FFFFFF; -fx-padding: 15px; -fx-border-radius: 10px;
+                                              -fx-background-radius: 10px; -fx-border-color: #0C003C; -fx-border-width: 2px;">
+                        <children>
+                            <Label text="Paal Details" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
+                            <Label fx:id="paalnummerLabel" text="Paalnummer: " style="-fx-font-size: 14px; -fx-text-fill: #0C003C;" />
+                            <Label fx:id="accupercentageLabel" text="Accupercentage: " style="-fx-font-size: 14px; -fx-text-fill: #0C003C;" />
+                            <Label fx:id="accuverbruikLabel" text="Accuverbruik: " style="-fx-font-size: 14px; -fx-text-fill: #0C003C;" />
+                            <Label fx:id="accuopbrengstLabel" text="Accuopbrengst: " style="-fx-font-size: 14px; -fx-text-fill: #0C003C;" />
+                            <Label fx:id="gebruiksfrequentieLabel" text="Gebruiksfrequentie: " style="-fx-font-size: 14px; -fx-text-fill: #0C003C;" />
+                        </children>
+                    </VBox>
+
+                    <!-- Gebruiksmomenten -->
+                    <VBox spacing="10.0" style="-fx-background-color: #FFFFFF; -fx-padding: 15px; -fx-border-radius: 10px;
+                                              -fx-background-radius: 10px; -fx-border-color: #0C003C; -fx-border-width: 2px;">
+                        <children>
+                            <Label text="Gebruiksmomenten" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0C003C;" />
+                            <Label fx:id="gebruiksmomentenLabel" text="Gebruiksmomenten:" style="-fx-font-size: 14px; -fx-text-fill: #0C003C;" />
+                        </children>
+                    </VBox>
+                </children>
+            </VBox>
+        </AnchorPane>
+    </children>
+</AnchorPane>

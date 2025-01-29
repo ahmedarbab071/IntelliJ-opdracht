@@ -43,11 +43,16 @@ public class InloggenKlantController {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/nieuw/zoekpaginaKlant.fxml"));
                 Parent root = fxmlLoader.load();
 
-                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                // Haal de juiste controller op en geef klantgegevens door
+                ZoekpaginaKlantController controller = fxmlLoader.getController();
+                controller.setKlantId(rs.getString("klant_id"));  // Voorbeeld ID ophalen
 
+                // Toon de nieuwe scene
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 stage.setScene(new Scene(root));
                 stage.setTitle("Zoekpagina klant");
                 stage.show();
+
             } else {
                 System.out.println("Onjuiste inloggegevens voor klant.");
             }
